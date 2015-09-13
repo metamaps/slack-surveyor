@@ -1,0 +1,32 @@
+{
+  "name": "surveyor",
+  "version": "1.0.0",
+  "description": "A bot user within slack that asks questions and collects responses via reactions.",
+  "main": "./surveyor.js",
+  "keywords": [
+    "slack"
+  ],
+  "author": 
+    { "name" : "Robert Best",
+      "email" : "chessscholar@gmail.com",
+	  "url" : "http://www.robert.best"
+    },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/metamaps/slack-surveyor/raw/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "http://github.com/metamaps/slack-surveyor/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/metamaps/slack-surveyor.git"
+  },
+  "dependencies": {
+    "slack-client": "1.4.1",
+    "agenda": "0.6.28",
+	"uuid": "2.0.1"
+  }
+}
