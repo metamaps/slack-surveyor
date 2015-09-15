@@ -100,7 +100,7 @@ function runSurvey(job, done) {
   // construct the message
   var message = '';
   if (opts.loud) {
-    message += "@channel "
+    message += "@channel ";
   }
 
   message += opts.question + '\n';
@@ -118,7 +118,7 @@ function runSurvey(job, done) {
   } else if (opts.maxReplies && opts.maxReplies > 1) {
     message += "To answer, click on the reactions below. (Only your first " + opts.maxReplies + " selections will count)";
   } else {
-    message += "To answer, click on the reactions below. (Click all that apply)"
+    message += "To answer, click on the reactions below. (Click all that apply)";
   }
 
   survey.fullQuestion = message;
