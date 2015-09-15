@@ -12,7 +12,7 @@ var Survey = function(question, choices, maxReplies, channelName) {
   this.channelName = channelName;
   if (maxReplies) this.maxReplies = maxReplies;
   this.instances = {};
-}
+};
 util.inherits(Survey, EventEmitter);
 
 Survey.prototype.postReactions = function(slack, ts) {
@@ -32,7 +32,7 @@ Survey.prototype.getChoiceByIcon = function(icon) {
     if (choice.icon === icon) result = choice;
   });
   return result;
-}
+};
 
 Survey.prototype.getUserAnswersForInstance = function(ts, userID) {
   var
@@ -44,7 +44,7 @@ Survey.prototype.getUserAnswersForInstance = function(ts, userID) {
     });
   }
   return result;
-}
+};
 
 Survey.prototype.findResponseIndex = function(ts, userID, reaction) {
   var
@@ -56,6 +56,6 @@ Survey.prototype.findResponseIndex = function(ts, userID, reaction) {
     }
   }
   return index;
-}
+};
 
 module.exports = Survey;
